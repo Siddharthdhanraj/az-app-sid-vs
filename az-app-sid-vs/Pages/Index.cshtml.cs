@@ -17,6 +17,8 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
+        //These are development settings we can set this value in
+        //App Settings of Configuration Azure for Production Enviroment
         ViewData["Greeting"] = _configuration["Greeting"];
 
 
